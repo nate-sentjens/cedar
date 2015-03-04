@@ -102,7 +102,7 @@ const char *CDRXSpecKey;
         [groupsQueue removeObjectAtIndex:0];
         if (exampleBase.hasChildren) {
             [groupsQueue addObjectsFromArray:[(CDRExampleGroup *)exampleBase examples]];
-        } else if ([exampleBase shouldRun]) {
+        } else {
             [examples addObject:exampleBase];
         }
     }
